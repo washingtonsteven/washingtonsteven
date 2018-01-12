@@ -5,14 +5,15 @@
 ### Install
 
 ```
-gem install jekyll
+gem install jekyll bundler
 git clone ... irate-iguana && cd irate-iguana
+bundle install
 ```
 
 ### Run
 
 ```
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve
 ```
 
 ## Upcoming
