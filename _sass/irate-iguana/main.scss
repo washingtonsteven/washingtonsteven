@@ -1,0 +1,15 @@
+$serif: "Bitter", Georgia, Times, serif;
+$sans: "Lato", Helvetica, Arial, sans-serif;
+
+$text_gray: #333;
+$background_color: #ededed;
+$yellow: #ffc700;
+$blue: #258ea6;
+
+$max_width: 1024px;
+$mobile_width: 425px;
+
+@import
+  "partials/base",
+  "partials/syntax-highlighting"
+;

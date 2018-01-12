@@ -1,0 +1,44 @@
+html, body, figure, h1, h2, h3 {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-size:16px;
+  font-family:$sans;
+  color:$text_gray;
+  line-height:1.4;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing:inherit;
+}
+
+h1, h2, h3 {
+  font-family:$serif;
+}
+
+img {
+  max-width:100%;
+  vertical-align:middle;
+}
+
+a {
+  text-decoration:none;
+  color:$blue;
+
+  &:hover {
+    color:$yellow
+  }
+}
+
+.wrapper {
+  max-width:$max-width;
+  margin:0 auto;
+}
+
+@import 
+  'header',
+  'content'
+;
