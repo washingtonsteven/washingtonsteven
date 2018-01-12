@@ -100,6 +100,7 @@ header.site-header {
     #nav-trigger:checked{
       & + label + .trigger {
         transform:translate(0);
+        box-shadow: 0 0 20px;
       }
 
       & + label {
