@@ -8,12 +8,13 @@
 gem install jekyll bundler
 git clone ... irate-iguana && cd irate-iguana
 bundle install
+(bundle update) // In case you are ever out of date (Jekyll < 3.7.0)
 ```
 
 ### Run
 
 ```
-bundle exec jekyll serve
+jekyll serve --livereload
 ```
 
 ## Upcoming
