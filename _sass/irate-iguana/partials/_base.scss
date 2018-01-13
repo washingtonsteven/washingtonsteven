@@ -15,9 +15,32 @@ body {
   box-sizing:inherit;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family:$serif;
   letter-spacing:0px;
+  text-align:center;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:2.5rem;
+}
+
+h2 {
+  font-size:2rem;
+}
+
+h3 {
+  font-size:1.75rem;
+}
+
+h4 {
+  font-size:1.5rem;
+}
+
+h5, h6 {
+  font-size:1rem;
+  text-transform:uppercase;
 }
 
 img {
@@ -37,10 +60,5 @@ a {
 .wrapper {
   max-width:$max-width;
   margin:0 auto;
+  padding:$site-padding;
 }
-
-@import 
-  'header',
-  'content',
-  'blocker'
-;

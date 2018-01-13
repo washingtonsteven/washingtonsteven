@@ -1,15 +1,26 @@
 $serif: "Rokkitt", Georgia, Times, serif;
 $sans: "PT Sans", Helvetica, Arial, sans-serif;
 
-$text_gray: #333;
+$text_gray: #4d4d4d;
+$gray: $text_gray;
+$light-gray: #9c9c9c;
 $background_color: #ededed;
+$offwhite: $background_color;
 $yellow: #ffc700;
 $blue: #258ea6;
 
+$site-padding:20px;
+
 $max_width: 1024px;
-$mobile_width: 425px;
+$mobile: 425px;
+$tablet: 768px;
+$desktop: 1024px;
 
 @import
   "partials/base",
+  "partials/content",
+  "partials/header",
+  "partials/footer",
+  "partials/blocker",
   "partials/syntax-highlighting"
 ;
