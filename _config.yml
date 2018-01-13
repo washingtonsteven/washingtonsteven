@@ -33,6 +33,7 @@ collections:
   projects:
     output: true
     layout: project
+    permalink: /:collection/:name
 footer_links:
   - title: Home
     url: /

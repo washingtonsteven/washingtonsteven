@@ -28,6 +28,14 @@ header.site-header {
       width:80px;
       display:inline-block;
     }
+
+    svg {
+      transition:all 0.2s linear;
+
+      &:hover {
+        fill:$gray;
+      }
+    }
   }
 
   nav {
