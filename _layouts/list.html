@@ -12,16 +12,27 @@ layout: default
   <ul class="post-list">
     {% for post in list %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        <div class="post-item">
+          {% if post.featured_image %}
+          <div class="post-img">
+              <a href="{{ post.url | relative_url }}">
+                <img src="{{ post.featured_image | absolute_url }}" />
+              </a>
+          </div>
+          {% endif %}
+          <div class="post-info">
+            {% if page.hide_date_in_list != true %}
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+            {% endif %}
+    
+            <h2>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+          </div>
+        </div>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>

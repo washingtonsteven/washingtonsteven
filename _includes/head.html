@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% assign logo_color = page.page_color | default:"#4d4d4d" %}
-  {% if logo_color == "blue" %}
-    {% assign logo_color = "#258ea6" %}
+  {% assign logo_color = page.page_color | default:"#258ea6" %}
+  {% if logo_color == "gray" %}
+    {% assign logo_color = "#4d4d4d" %}
   {% elsif logo_color == "yellow" %}
     {% assign logo_color = "#ffc700" %}
   {% elsif logo_color == "red" %}
     {% assign logo_color = "#ff4542" %}
+  {% elsif logo_color == "blue" %}
+    {% assign logo_color = "#258ea6" %}
   {% endif %}
   <style>
     .title-link svg {

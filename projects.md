@@ -3,5 +3,6 @@ layout: list
 title: Projects
 collection: projects
 permalink: /projects/
-page_color: red
+page_color: blue
+hide_date_in_list: true
 ---

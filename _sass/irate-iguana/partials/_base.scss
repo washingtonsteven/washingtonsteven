@@ -54,7 +54,8 @@ a {
   transition:color 0.2s linear;
 
   &:hover {
-    color:$yellow
+    color:$yellow;
+    text-shadow:0 0 2px $blue; // rgba(0,0,0,0.4);
   }
 }
 
