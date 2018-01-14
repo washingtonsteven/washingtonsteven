@@ -4,6 +4,7 @@ $sans: "PT Sans", Helvetica, Arial, sans-serif;
 $text_gray: #4d4d4d;
 $gray: $text_gray;
 $light-gray: #9c9c9c;
+$bg-gray: #fafafa;
 $background_color: #ededed;
 $offwhite: $background_color;
 $yellow: #ffc700;
@@ -21,6 +22,8 @@ $desktop: 1024px;
   "partials/base",
   "partials/header",
   "partials/content",
+  "partials/hero",
+  "partials/home",
   "partials/list",
   "partials/footer",
   "partials/blocker",

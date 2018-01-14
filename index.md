@@ -2,6 +2,8 @@
 layout: home
 ---
 
-# Hello yes I am here.
-
-howboudah
+<div style="text-align:center">
+  making awesome stuff.
+  <br/>
+  eating good food.
+</div>

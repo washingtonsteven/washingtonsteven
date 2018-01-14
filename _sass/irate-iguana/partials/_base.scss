@@ -9,6 +9,7 @@ body {
   color:$text_gray;
   line-height:1.4;
   box-sizing: border-box;
+  background-color:$bg_gray;
 }
 
 * {
@@ -55,7 +56,6 @@ a {
 
   &:hover {
     color:$yellow;
-    text-shadow:0 0 2px $blue; // rgba(0,0,0,0.4);
   }
 }
 

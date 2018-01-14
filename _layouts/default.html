@@ -8,6 +8,9 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
+      {% if page.layout == "home" %}
+        {% include hero.html %}
+      {% endif %}
       <div class="wrapper">
         {{ content }}
       </div>
