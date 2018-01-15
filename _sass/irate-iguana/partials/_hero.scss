@@ -5,6 +5,7 @@ main {
     padding:160px 0 80px;
     text-align:center;
     position:relative;
+    overflow:hidden;
 
     &:before {
       content:"";
@@ -54,7 +55,14 @@ main {
     }
 
     &.load .layer {
-      transform: skew(-34deg) translate(0,0)
+      transform: skew(-34deg) translate(0,0);
+      &:first-of-type { transition-delay:0s; }
+      &:nth-of-type(2) { transition-delay:0.05s; }
+      &:last-of-type { transition-delay:0.15s; }
+    }
+
+    &:hover .layer {
+      transform: skew(-34deg) translate(10%,0);
     }
   }
 }

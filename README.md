@@ -14,7 +14,7 @@ bundle install
 ### Run
 
 ```
-jekyll serve --livereload
+jekyll serve --livereload --drafts
 ```
 
 ## Upcoming
