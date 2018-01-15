@@ -1,4 +1,9 @@
-<div class="hero">
+{% if page.layout != "home" %}
+  {% assign hero_class = "smaller" %}
+{% else %}
+  {% assign hero_class = "expanded" %}
+{% endif %}
+<div class="hero {{ hero_class }}">
   {% include img/logo.svg %}
   <h1 class="name">Steven Washington</h1>
   <span class="layer red"></span>
