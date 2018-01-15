@@ -12,6 +12,7 @@
     {% if page_paths %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        
         <label for="nav-trigger">
           <div class="menu-icon">
             <span class="line" id="line-1"></span>
@@ -30,6 +31,8 @@
             {% endfor %}
           </ul>
         </div>
+
+        <label for="nav-trigger" id="body-blocker"></label>
       </nav>
     {% endif %}
   </div>

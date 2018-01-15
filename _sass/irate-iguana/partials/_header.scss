@@ -103,6 +103,7 @@ header.site-header {
       padding:60px 30px;
       transform:translateX(100%);
       transition:transform 0.2s ease-in-out;
+      z-index:9;
 
       ul {
         list-style:none;
@@ -127,10 +128,29 @@ header.site-header {
       }
     }
 
+    label#body-blocker {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      background-color:rgba(0,0,0,0.4);
+      z-index:8;
+      display:block;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity 0.2s ease-in-out;
+    }
+
     #nav-trigger:checked{
       & + label + .trigger {
         transform:translate(0);
         box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      }
+
+      & + label + .trigger + #body-blocker {
+        opacity:1;
+        pointer-events:all;
       }
 
       & + label {
