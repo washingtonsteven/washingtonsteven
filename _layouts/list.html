@@ -16,7 +16,7 @@ layout: default
           {% if post.featured_image %}
           <div class="post-img">
               <a href="{{ post.url | relative_url }}">
-                <img src="{{ post.featured_image | absolute_url }}" />
+                <img src="{{ post.featured_image | relative_url }}" />
               </a>
           </div>
           {% endif %}
