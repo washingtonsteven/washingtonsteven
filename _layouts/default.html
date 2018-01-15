@@ -5,6 +5,11 @@
 
   <body>
 
+    
+    {% if site.github and site.github.environment != "development" %}
+      {% include blocker.html %}
+    {% endif %}
+
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
@@ -16,9 +21,6 @@
 
     {% include footer.html %}
 
-    {% if site.github and site.github.environment != "development" %}
-      {% include blocker.html %}
-    {% endif %}
   </body>
 
 </html>
