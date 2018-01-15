@@ -9,4 +9,13 @@
       &copy; Copyright 2018 Steven Washington
     </div>
   </div>
+  <script type="text/javascript">
+    window.onload = function() {
+      if (window.onloadfuncs) {
+        for (var i = 0; i < window.onloadfuncs.length; i++) {
+          window.onloadfuncs[i]();
+        }
+      }
+    }
+  </script>
 </footer>
