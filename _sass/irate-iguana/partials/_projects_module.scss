@@ -15,10 +15,22 @@ $gutter:15px;
     width:calc(33% - #{$gutter});
     height:150px;
     font-size:1rem;
-    background-color:$red;
     display:table;
-    border-radius:5px;
+    border-radius:4px;
     margin:0 $gutter/2 $gutter;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.4);
+
+    &.yellow a:hover {
+      color:$red;
+    }
+
+    &.blue a {
+      color:$yellow;
+
+      &:hover {
+        color:$red;
+      }
+    }
 
     & > * {
       display:table-cell;

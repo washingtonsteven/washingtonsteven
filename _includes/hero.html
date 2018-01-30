@@ -12,8 +12,8 @@
 </div>
 
 <script type="text/javascript">
-  if (window.onloadfuncs) window.onloadfuncs.push(hero_init);
-  else window.onload = hero_init;
+  if (!window.onloadfuncs) window.onloadfuncs = [];
+  window.onloadfuncs.push(hero_init);
 
   function hero_init() {
     document.querySelector('.hero').classList.add('load');

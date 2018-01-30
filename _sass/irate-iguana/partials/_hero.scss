@@ -65,10 +65,6 @@ main {
       &:first-of-type { width:55%; transition-delay:1s }
       &:nth-of-type(2) { width:40%; transition-delay:1.05s; }
       &:last-of-type { width:25%; transition-delay:1.15s; }
-
-      &.red { background-color:$red; }
-      &.blue { background-color:$blue; }
-      &.yellow { background-color:$yellow; }
     }
 
     &.load .layer {
