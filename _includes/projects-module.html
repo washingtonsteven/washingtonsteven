@@ -1,0 +1,13 @@
+{% assign featured_projects = site.projects | where:"featured", true %}
+
+<div class="featured-projects">
+{% if featured_projects.size > 0 %}
+  {% for project in featured_projects %}
+    <div class="featured-project">
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </div>
+  {% endfor %}
+{% else %}
+  <h3>No Featured Projects</h3>
+{% endif %}
+</div>

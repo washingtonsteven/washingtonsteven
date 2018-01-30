@@ -1,0 +1,37 @@
+$gutter:15px;
+
+.featured-projects {
+  width:100%;
+  font-size:0;
+  overflow:hidden;
+
+  &:after {
+    content:"";
+    clear:both;
+  }
+
+  .featured-project {
+    float:left;
+    width:calc(33% - #{$gutter});
+    height:150px;
+    font-size:1rem;
+    background-color:$red;
+    display:table;
+    border-radius:5px;
+    margin:0 $gutter/2 $gutter;
+
+    & > * {
+      display:table-cell;
+      text-align:center;
+      vertical-align:middle;
+    }
+
+    @media(max-width:$tablet) {
+      width:calc(50% - #{$gutter});
+    }
+
+    @media(max-width:$mobile) {
+      width:calc(100% - #{$gutter});
+    }
+  }
+}
