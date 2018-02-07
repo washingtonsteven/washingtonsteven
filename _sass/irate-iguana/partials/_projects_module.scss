@@ -3,13 +3,18 @@
     width:60%;
     margin:25px auto;
 
+    @media(max-width:$tablet) {
+      width:95%;
+    }
+
     & > a {
       font-family:$serif;
       font-size:1.5rem;
       color:$gray;
-      line-height:1.5;
+      line-height:1.1;
       text-align:center;
       display:block;
+      padding:10px 0;
     }
 
     &:nth-child(3n) {

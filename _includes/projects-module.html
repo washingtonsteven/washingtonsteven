@@ -4,7 +4,7 @@
 {% if featured_projects.size > 0 %}
   {% for project in featured_projects %}
     <div class="featured-project">
-      <a href="{{ project.repo | default: project.url }}">{{ project.title }}</a>
+      <a href="{{ project.repo | default: project.url }}">{{ project.title | replace: " - ", " <br/>-<br/>" }}</a>
       {{ project.content }}
     </div>
   {% endfor %}
