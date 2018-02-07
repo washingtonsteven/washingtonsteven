@@ -100,8 +100,10 @@ header.site-header {
       top:0;
       right:0;
       height:100vh;
+      width:33vw;
+      min-width:250px;
       background-color:$blue;
-      padding:60px 30px;
+      padding:60px 0;
       transform:translateX(100%);
       transition:transform 0.2s ease-in-out;
       z-index:9;
@@ -113,17 +115,22 @@ header.site-header {
 
         li {
           display:block;
-          margin:20px 40px;
+          margin:0;
           padding:0;
           text-align:center;
-          padding:10px 25px;
           font-family:$serif;
 
           a {
             color:#fff;
-            position:relative;
+            display:block;
+            padding:20px 0;
 
-            &:after {
+            & > span {
+              display:inline-block;
+              position:relative;
+            }
+
+            & > span:after {
               content:"";
               position:absolute;
               top:100%;
@@ -138,9 +145,10 @@ header.site-header {
             }
 
             &:hover {
-              color:$yellow;
+              color:#fff;
+              text-decoration:none;
 
-              &:after {
+              & > span:after {
                 opacity:1;
                 transform:translate(0,0);
               }
