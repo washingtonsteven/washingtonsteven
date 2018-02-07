@@ -12,11 +12,11 @@
 </div>
 
 <script type="text/javascript">
-  if (!window.onloadfuncs) window.onloadfuncs = [];
-  window.onloadfuncs.push(hero_init);
-
-  function hero_init() {
-    document.querySelector('.hero').classList.add('load');
+  function hero_init() { document.querySelector('.hero').classList.add('load'); }
+  if (!swash.onDocumentReady) {
+    hero_init();
+  } else {
+    swash.onDocumentReady(hero_init);
   }
 
 </script>

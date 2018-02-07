@@ -1,12 +1,9 @@
 ---
-title: thorndike
-description: Get bus predictions using your voice
+title: Thorndike - Voice Activated Bus Predictions
 repo: https://github.com/washingtonsteven/thorndike
 featured_image: assets/2018/01/MBTA.svg
 featured: true
+tech: javascript
 ---
 
-Yes I did this. There are two interfaces:
-
-- Google Assistant
-- IFTTT notifications
+Express.js based server that responds to requests from Google Assistant and IFTTT, returning the latest bus predictions for a handful of stops.

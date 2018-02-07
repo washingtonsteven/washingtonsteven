@@ -1,11 +1,17 @@
-function init() {
-  var colors = ['blue', 'yellow', 'red'];
-  var fps = document.getElementsByClassName('featured-project');
-  for(var i = 0; i < fps.length; i++) {
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    fps[i].classList.add(color);
+var swash = {
+  docReadyFuncs:[],
+  init: function() {
+    this.doDocumentReady();
+  },
+  onDocumentReady: function(fn) {
+    this.docReadyFuncs.push(fn);
+  },
+  doDocumentReady: function() {
+    for (idx in this.docReadyFuncs) {
+      var fn = this.docReadyFuncs[idx];
+      if (typeof fn === "function") fn();
+    }
   }
 }
 
-if (!window.onloadfuncs) window.onloadfuncs = [];
-window.onloadfuncs.push(init);
+window.onload = function() { swash.init(); }

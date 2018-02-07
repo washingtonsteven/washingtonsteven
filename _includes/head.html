@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  
   {% assign logo_color = page.page_color | default:"#258ea6" %}
   {% if logo_color == "gray" %}
     {% assign logo_color = "#4d4d4d" %}

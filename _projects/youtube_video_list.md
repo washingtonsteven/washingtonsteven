@@ -1,10 +1,8 @@
 ---
-title: youtube_video_list
-description: Video list babee
+title: Youtube Video List
 repo: https://github.com/washingtonsteven/youtube_video_list
-featured: true
+featured: false
+tech: javascript
 ---
 
-# Youtube\_video_list
-
-Like for real guys, it's here
+Automated way to grab info on a Youtube channel's uploads.

@@ -1,0 +1,66 @@
+$gutter:-1px;
+
+.featured-projects {
+  width:100%;
+  font-size:0;
+  overflow:hidden;
+
+  &:after {
+    content:"";
+    clear:both;
+  }
+
+  .featured-project {
+    position:relative;
+    cursor:pointer;
+    float:left;
+    width:calc(33% - #{$gutter});
+    height:150px;
+    font-size:1rem;
+    display:table;
+    margin:0 $gutter/2 $gutter;
+
+    &:before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color:rgba(0,0,0,0.4);
+      opacity:0;
+      transition:opacity 0.2s ease-in-out;
+      z-index:1;
+    }
+
+    & > * {
+      position:relative;
+      z-index:2;
+      transition:color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      &:before {
+        opacity:1;
+      }
+    }
+
+    &.blue a {
+      color:$yellow;
+    }
+
+    & > * {
+      display:table-cell;
+      text-align:center;
+      vertical-align:middle;
+    }
+
+    @media(max-width:$tablet) {
+      width:calc(50% - #{$gutter});
+    }
+
+    @media(max-width:$mobile) {
+      width:calc(100% - #{$gutter});
+    }
+  }
+}
