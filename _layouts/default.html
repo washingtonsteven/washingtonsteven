@@ -5,10 +5,13 @@
 
   <body>
 
-    
+    {% comment %}
+    <!-- below is liquid code to hide the site while hosted on github, useful for when this was in development, and didn't want pushes to be public -->
     {% if site.github and site.github.environment != "development" %}
       {% include blocker.html %}
     {% endif %}
+
+    {% endcomment %}
 
     {% include header.html %}
 
