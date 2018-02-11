@@ -10,6 +10,7 @@ body {
   line-height:1.4;
   box-sizing: border-box;
   background-color:$bg_gray;
+  overflow-x:hidden;
 }
 
 * {
@@ -75,10 +76,26 @@ a {
 .blue { background-color:$blue; }
 .yellow { background-color:$yellow; }
 
+.breadcrumb {
+  a:before {
+    content:"\2190";
+    display:inline;
+  }
+}
+
+%hover-shadow {
+  box-shadow:3px 3px 5px rgba(0,0,0,0.4);
+  transition:box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow:5px 5px 10px rgba(0,0,0,0.4);
+  }
+}
+
 %color-link {
+  @extend %hover-shadow;
   position:relative;
   color:#fff;
-  box-shadow:3px 3px 5px rgba(0,0,0,0.4);
   transition:box-shadow 0.2s linear;
 
   &:before {
@@ -94,7 +111,6 @@ a {
   &:hover {
     color:#fff;
     text-decoration:none;
-    box-shadow:5px 5px 10px rgba(0,0,0,0.4);
   }
 }
 

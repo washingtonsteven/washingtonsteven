@@ -1,6 +1,7 @@
 {% assign featured_projects = site.projects | where:"featured", true %}
 
 <div class="featured-projects">
+  <h4>Here are some projects I've been working on</h4>
 {% if featured_projects.size > 0 %}
   {% for project in featured_projects %}
     <div class="featured-project project-{{ project.color | default: "blue" }}">

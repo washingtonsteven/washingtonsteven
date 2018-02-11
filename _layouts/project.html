@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post project" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="breadcrumb">
+      <a href="/projects" class="">Back to Projects</a>
+    </div>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -14,7 +17,7 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}</p>
       {% if page.repo %}
-        <a href="{{ page.repo }}" target="_blank" rel="noopener noreferrer">Repo</a>
+        <a href="{{ page.repo }}" class="repo" target="_blank" rel="noopener noreferrer">Browse this project on Github</a>
       {% endif %}
   </header>
 
@@ -25,4 +28,10 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+
+
+  <div class="breadcrumb">
+    <a href="/projects" class="">Back to Projects</a>
+  </div>
+
 </article>

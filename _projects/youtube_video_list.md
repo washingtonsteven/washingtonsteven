@@ -1,7 +1,7 @@
 ---
 title: Youtube Video List
 repo: https://github.com/washingtonsteven/youtube_video_list
-featured: true
+featured: false
 tech: javascript
 color: red
 ---

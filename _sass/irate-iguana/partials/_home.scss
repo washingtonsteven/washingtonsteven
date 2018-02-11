@@ -1,5 +1,50 @@
+$profile_size:150px;
+
 main {
   .home {
+    padding-bottom:300px;
 
+    div.profile {
+      @extend %hover-shadow;
+      width:$profile_size;
+      height:$profile_size;
+      border-radius:50%;
+      display:block;
+      margin:35px auto;
+      background-size:150%;
+      background-position:center 75%;
+    }
+
+    .contact {
+      background-color:$blue;
+      color:#fff;
+      a { color:$yellow; }
+      padding:35px;
+      position:absolute;
+      left:0;
+      width:100vw;
+      text-align:center;
+      margin:35px 0;
+
+      & > div {
+        width:100%;
+        max-width:$max-width;
+        margin:0 auto;
+      }
+
+      a.contact-link {
+        @extend %hover-shadow;
+        display:block;
+        margin:20px auto;
+        background-color:$yellow;
+        color:$blue;
+        padding:10px 15px;
+        max-width:150px;
+
+        &:hover {
+          text-decoration:none;
+        }
+      }
+    }
   }
 }

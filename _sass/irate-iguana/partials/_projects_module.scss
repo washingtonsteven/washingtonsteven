@@ -2,6 +2,7 @@
   width:100%;
   font-size:0;
   float:left;
+  margin:35px auto;
 
   &:after {
     clear:both;
@@ -9,14 +10,19 @@
   }
 
   .featured-project {
-    width:47%;
+    width:48%;
     font-size:1rem;
-    margin:25px 3% 25px 0;
+    margin:25px 4% 25px 0;
     float:left;
+
+    &:nth-child(2n+1) {
+      margin-right:0;
+    }
 
     @media(max-width:$tablet) {
       width:100%;
       float:none;
+      margin-right:0;
     }
 
     & > a {

@@ -1,0 +1,13 @@
+article.project {
+  a.repo {
+    font-size:1.2rem;
+    padding:10px 15px;
+    color:#fff;
+    background-color:$blue;
+    @extend %hover-shadow;
+    cursor:pointer;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+}
