@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: stevewa.sh - irate iguana
+title: stevewa.sh - Steven Washington
 header_title: S
 email: washington.steven@gmail.com
 author: Steven Washington
@@ -26,7 +26,6 @@ twitter_username: esaevian
 github_username:  washingtonsteven
 header_pages:
   - contact.md
-  - uses.md
   - posts.md
   - projects.md
 collections:

@@ -3,7 +3,7 @@ layout: post
 title:  "Yelling at Silicon (Part 1)"
 subtitle: "Getting Google Assistant to do what you want"
 date: 2018-02-05
-categories: google assistant javascript ifttt
+categories: google, assistant, javascript, ifttt
 ---
 
 The use of various voice-activated home assistants in everyday life has been booming lately. It started off with Siri, and Google followed with their Assistant. Alexa came on the scene and even Cortana has given it a go.

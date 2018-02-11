@@ -14,6 +14,8 @@
       color:#fff;
       display:table;
       padding:5px 0;
+      box-shadow:2px 0 7px rgba(0,0,0,0.4);
+      position: relative;
 
       span {
         display:table-cell;
@@ -38,8 +40,12 @@
       height:100%;
       position:absolute;
       top:0;
-      left:20%;
+      left:calc(20% - 1px);
       background:$blue;
+    }
+
+    &:before {
+      box-shadow:2px 0 4px rgba(0,0,0,0.4);
     }
 
     &:after {
