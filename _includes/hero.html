@@ -4,7 +4,10 @@
   {% assign hero_class = "expanded" %}
 {% endif %}
 <div class="hero {{ hero_class }}">
-  {% include img/logo.svg %}
+  <a href="/">{% include img/logo.svg %}</a>
+  {% if page.layout == "home" %}
+    <h1 class="intro">Hello, I'm</h1>
+  {% endif %}
   <h1 class="name">Steven Washington</h1>
   <span class="layer red"></span>
   <span class="layer blue"></span>

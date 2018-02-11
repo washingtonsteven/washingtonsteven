@@ -1,43 +1,3 @@
-%color-link {
-  position:relative;
-  color:#fff;
-  box-shadow:3px 3px 5px rgba(0,0,0,0.4);
-  transition:box-shadow 0.2s linear;
-
-  &:before {
-    position:absolute;
-    content:"";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    transition:background-color 0.1s linear;
-  }
-  &:hover {
-    color:#fff;
-    text-decoration:none;
-    box-shadow:5px 5px 10px rgba(0,0,0,0.4);
-  }
-}
-
-%yellow-link {
-  @extend %color-link;
-  color:$gray;
-  &:before { background-color:$yellow; }
-}
-
-%blue-link {
-  @extend %color-link;
-  &:before { background-color:$blue; }
-}
-
-%green-link {
-  @extend %color-link;
-  color:#fff;
-  &:before { background-color:$green; }
-}
-
 .featured-projects {
   width:100%;
   font-size:0;
@@ -69,16 +29,20 @@
       padding:10px 0;
     }
 
-    &:nth-child(3n) {
+    &.project-yellow {
       & > a { @extend %yellow-link; }
     }
 
-    &:nth-child(3n + 1) {
+    &.project-green {
       & > a { @extend %green-link; }
     }
 
-    &:nth-child(3n + 2) {
-      & > a { @extend %blue-link };
+    &.project-blue {
+      & > a { @extend %blue-link; }
+    }
+
+    &.project-red {
+      & > a { @extend %red-link; }
     }
   }
 }

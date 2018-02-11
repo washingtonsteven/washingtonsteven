@@ -21,11 +21,14 @@ My typical morning involves the usual things: waking up, checking Twitter while 
 To start, I built a quick function that interfaces with Nextbus' API. It accepts a stop name, and returns an object that has the prediction data that I need:
 
 ```javascript
+// Nextbus needs a stopId to look up predictions
+// We have an object that maps stopNames to stopIds
+const stops = {
+  'harvard':'55555'
+  // other stops here...
+}
+
 exports.getPredictions = stopName => {
-  // Nextbus needs a stopId to look up predictions
-  // We have an object that maps stopNames to stopIds
-  // This is statically defined in code, but it works
-  // For the single-use case.
   const stopId = stops[stopName];
 
   const nextbusURL = `http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=mbta&stopId=${stopId}`;

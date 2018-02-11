@@ -1,0 +1,8 @@
+<div class="skills">
+{% for skill in page.skills %}
+  <div class="skill" data-skill-value="{{ skill.value }}">
+    <div class="skill-name"><span>{{ skill.name }}</span></div>
+    <div class="skill-value">{{ skill.value }}</div>
+  </div>
+{% endfor %} 
+</div>

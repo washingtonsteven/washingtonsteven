@@ -1,0 +1,78 @@
+.skills {
+  .skill {
+    width:100%;
+    background-color:$light-gray;
+    position:relative;
+    margin-bottom:10px;
+    overflow:hidden;
+
+    .skill-name {
+      background-color:$dark-blue;
+      width:20%;
+      display:inline-block;
+      text-align:center;
+      color:#fff;
+      display:table;
+      padding:5px 0;
+
+      span {
+        display:table-cell;
+        vertical-align:middle;
+        padding:0 5%;
+      }
+    }
+
+    .skill-value {
+      position:absolute;
+      right:2.5%;
+      top:50%;
+      transform:translateY(-50%);
+      color:#fff;
+      mix-blend-mode:overlay;
+    }
+    
+    &:before, &:after {
+      content:"";
+      display:block;
+      width:calc(80% + 1px);
+      height:100%;
+      position:absolute;
+      top:0;
+      left:20%;
+      background:$blue;
+    }
+
+    &:after {
+      display:inline-block;
+      opacity:0;
+      transition:background-position 0.6s linear, opacity 0.15s linear;
+      background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.13) 8%,
+        rgba(255, 255, 255, 0.5) 16%,
+        rgba(255, 255, 255, 0.0) 24%
+      );
+      background-size:400% 100%;
+      background-position-x:200%;
+    }
+
+    @keyframes shine {
+      from { opacity:0; backgorund-position-x:200%; }
+      to { opacity:1; background-position-x:100%; }
+    }
+
+    &:hover:after {
+      animation:shine 0.6s;
+      opacity:1;
+    }
+
+    @for $i from 1 to 21 {
+      &[data-skill-value="#{$i*5}"] {
+        &:before, &:after {
+          width:calc(#{$i*4}% + 1px);
+        }
+      }
+    }
+  }
+}

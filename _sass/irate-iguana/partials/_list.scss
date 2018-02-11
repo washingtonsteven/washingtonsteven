@@ -38,5 +38,20 @@ main {
         }
       }
     }
+
+    .blocks {
+      .post-item {
+        a {
+          display:block;
+          padding:10px 0;
+          text-align:center;
+        }
+
+        &.item-green  { a { @extend %green-link; } }
+        &.item-blue   { a { @extend %blue-link; } }
+        &.item-yellow { a { @extend %yellow-link; } }
+        &.item-red    { a { @extend %red-link; } }
+      }
+    }
   }
 }

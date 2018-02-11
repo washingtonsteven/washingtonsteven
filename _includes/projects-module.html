@@ -3,7 +3,7 @@
 <div class="featured-projects">
 {% if featured_projects.size > 0 %}
   {% for project in featured_projects %}
-    <div class="featured-project">
+    <div class="featured-project project-{{ project.color | default: "blue" }}">
       <a href="{{ project.repo | default: project.url }}">{{ project.title | replace: " - ", " <br/>-<br/>" }}</a>
       {{ project.content }}
     </div>
