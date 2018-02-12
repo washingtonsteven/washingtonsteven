@@ -2,7 +2,7 @@
 layout: post
 title:  "Yelling at Silicon (Part 1)"
 subtitle: "Getting Google Assistant to do what you want"
-date: 2018-02-12
+date: 2018-02-12 11:28:15 -0500
 categories: google, assistant, javascript, ifttt
 ---
 
