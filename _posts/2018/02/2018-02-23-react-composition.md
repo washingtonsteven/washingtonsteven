@@ -2,9 +2,14 @@
 layout: post
 title:  "Stuff made out of things: Composing Components"
 subtitle: "Relentless Progress toward goals isn't always what you need"
-date: 2018-02-21
+date: 2018-02-23
 categories: showdev, react, javascript, components
 ---
+
+[reactvn]: https://github.com/washingtonsteven/react-vn
+[reactcomp]: https://reactjs.org/docs/composition-vs-inheritance.html
+[mjrenderprops]: https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce
+[breakingup]: https://medium.com/tandemly/im-breaking-up-with-higher-order-components-44b0df2db052
 
 So. You're sitting there. You have a thing. But now you wish it did a slightly different thing. But you don't want to have to make the thing all over again. 
 
@@ -189,8 +194,3 @@ There are a number of people who have waxed poetic on the advantages of render p
 I'm still working on getting up to snuff on this new React pattern, so check back soon for an update to this on how to incorporate this into the choose your adventure app.
 
 </div>
-
-[reactvn]: https://github.com/washingtonsteven/react-vn
-[reactcomp]: https://reactjs.org/docs/composition-vs-inheritance.html
-[mjrenderprops]: https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce
-[breakingup]: https://medium.com/tandemly/im-breaking-up-with-higher-order-components-44b0df2db052
